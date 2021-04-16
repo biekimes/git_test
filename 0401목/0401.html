@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uno de Abril</title>
+
+    <style>
+        a:link,
+        a:visited {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-size: 80px;
+            background-image: url('home.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid rgb(224, 228, 224);
+            /* transition-duration: 500ms;
+            transition-timing-function: ease-out; */
+            transition: all ease-out 300ms;
+        }
+
+        a:hover {
+            transform: scale(1.1) translateY(-10px);
+            background-color: rgb(231, 252, 214);
+            border-radius: 20%;
+            background-size: 90px;
+            background-image: url('community.png');
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-image: url('sponer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #box:hover {
+            animation-name: aniOne, aniTwo;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes aniOne {
+            from {
+                background-image: url('sponer.jpg');
+                background-size: initial;
+            }
+
+            to {
+                background-image: url('messenger.png');
+                background-size: initial;
+            }
+        }
+
+        @keyframes aniTwo {
+            0% {
+                margin-left: 0px;
+            }
+
+            50% {
+                margin-left: 200px;
+            }
+
+            100% {
+                margin-left: 400px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+
+<body>
+    <h1>Transitions</h1>
+    <a href="#"></a>
+    <hr>
+    <div id="box"></div>
+
+
+
+
+
+
+</body>
+
+</html>

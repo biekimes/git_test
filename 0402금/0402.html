@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        #t1 {
+            width: 120px;
+            height: 100%;
+            background-color: lavender;
+        }
+
+        img {
+            width: 100px;
+            transition: 800ms;
+        }
+
+        #t1 img:active {
+            transform: translate(100px, 10px);
+            -webkit-transform: translate(100px, 10px);
+        }
+
+        #t2 {
+            width: 120px;
+            height: 100%;
+            background-color: lemonchiffon;
+        }
+
+        #t2 img:first-of-type:hover {
+            transform: rotateZ(200deg);
+        }
+
+        #t2 img:nth-of-type(2):hover {
+            transform: rotateX(200deg);
+        }
+
+        #t2 img:nth-of-type(3):hover {
+            transform: rotateY(500deg);
+        }
+
+        #t2 img:nth-of-type(4):active {
+            transform: rotate3D(1, 1, 0.2, 500deg) translate(-100px, 200px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Transform</h1>
+    <div id="t1">
+        <h2>Translate</h2>
+        <img src="../0401목/blocks.png" alt="">
+    </div>
+    <div id="t2">
+        <h2>Rotate Z</h2>
+        <img src="../0401목/blocks.png" alt="">
+        <h2>Rotate X</h2>
+        <img src="../0401목/blocks.png" alt="">
+        <h2>Rotate Y</h2>
+        <img src="../0401목/blocks.png" alt="">
+        <h2>Rotate 3D</h2>
+        <img src="../0401목/blocks.png" alt="">
+    </div>
+</body>
+
+</html>

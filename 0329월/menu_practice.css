@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+
+header {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    background-color: #90be6d;
+    text-align: center;
+    line-height: 100px;
+    font-size: 32px;
+}
+
+.header_container {
+    display: inline-block;
+    width: 100%;
+}
+
+header span {
+    font-family: 'Train One', cursive;
+    font-size: 32px;
+    line-height: 32px;
+    color: #277da1;
+    float: left;
+    padding-left: 20px;
+    text-shadow: 1px 1px 5px darkblue;
+}
+
+header input {
+    font-size: 18px;
+    width: 300px;
+    height: 32px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: right;
+
+    /* image in search bar */
+    padding-left: 34px;
+    background-image: url('../0329월/iconfinder_search_326690.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 4px center;
+}
+
+header button {
+    float: right;
+    font-size: 20px;
+    width: 100px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    margin-left: 10px;
+    transition: 150ms;
+}
+
+header button:hover {
+    background-color: rgb(147, 175, 226);
+}
+
+nav {
+    min-width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #f9c74f;
+    text-align: center;
+   }
+
+nav div {
+    display: inline-block;
+    width: 200px;
+    line-height: 50px;
+}
+
+nav a:link, nav a:visited {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 150ms;
+}
+
+nav a:hover {
+    color: white;
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+}
+
+nav a:active {
+    color: rgb(128, 128, 237);
+}
+
+article {
+    width: 1200px;
+    margin: 20px auto;
+   }
+
+article h3 {
+    font-size: 20px;
+    padding: 10px 5px;
+}
+
+.item {
+   margin-left: 70px;
+    width: 150px;    
+    height: 300px;
+    display: inline-block;
+    box-sizing: border-box;   
+}
+
+.item div {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-image: url('https://images.unsplash.com/photo-1616941482131-489295011919?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.item h4 {
+    width: 150px;
+    height: 30px;
+    font-size: 14px;   
+    padding: 3px 5px;
+    box-sizing: border-box;
+}
+
+.item p {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+section {
+    width: 1200px;
+    float: left;
+}
+.container {
+    margin: 0 auto;
+    width: 1600px;
+}
+.banner{
+    margin-top: 30px;
+    width: 200px;
+    height: 600px;
+    float: left;
+   box-sizing: border-box;
+}
+
+.banner_1 {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 0;
+}
+
+.banner_img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner_2 {
+    width: 180px;
+    height: 120px;
+    display: inline-block;
+    padding-bottom: 1px;
+}
+
+footer {
+    clear: both;
+    min-width: 1200px;
+    height: 200px;
+    background-color: blanchedalmond;
+}
+
+.footer_container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_p {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    width: 50%;
+    float: left;
+}
+
+.footer_link:link, .footer_link:visited, .footer_link:hover {
+    padding: 0;
+    font-size:12px;
+    font-weight: normal;
+    text-decoration:none;
+    color: black;
+    }
+.footer_link:hover {
+    padding: 0;
+    font-size:12px;
+    font-weight: normal;
+    text-decoration:underline; 
+    color: black;
+    }
+
+footer ul {
+    clear: both;
+    list-style: none;    
+    font-size: 12px;
+}
+
+footer ul li {
+    display: inline-block;
+    font-size: 12px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+    <script>
+        var today = new Date();
+        document.write(today, "<br>");
+        document.write(" Year: ", today.getFullYear());
+        document.write(" Month: ", today.getMonth() + 1);
+        document.write(" Date: ", today.getDate());
+        document.write(" Day: ", today.getDay() + 1, "<hr>");
+
+        var yesterday = new Date(2021, 3, 11);
+        document.write(" Year: ", yesterday.getFullYear());
+        document.write(" Month: ", yesterday.getMonth() + 1);
+        document.write(" Date: ", yesterday.getDate());
+        document.write(" Day: ", yesterday.getDay() + 1, "<hr>");
+
+        today = new Date(2021, 3, 12);
+        document.write(today.getTime(), "<br>");
+        document.write(yesterday.getTime(), "<br>");
+        document.write(today - yesterday, "<br>");
+        document.write((today - yesterday) / (1000 * 60 * 60 * 24), "<br>");
+
+        var testDate = new Date(2021, 10, 18);
+        document.write("Days Left: ", (testDate - today) / (1000 * 60 * 60 * 24), "<br>");
+
+        let yearEnd = new Date(2021, 11, 31);
+        let dDay = (yearEnd.getTime() - today.getTime()) / (1000 * 60 * 60 * 24);
+        document.write(dDay)
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CSS</title>
+
+    <style>
+        #back {
+            background-image: url("https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+            width: 300px;
+            height: 400px;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pop" ">영역 태그</div>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+   <div id="back" onmouseover="rolloverImage()"></div>
+
+
+    <script>
+        var pop = document.getElementById("pop");
+        // alert(pop.innerHTML);
+        pop.style.color = "#8e7a6b";
+        pop.style.backgroundColor = "turquoise";
+        pop.style.fontWeight = "bold";
+        pop.style.padding = "50px";
+
+        var ul = document.getElementsByTagName("ul")[0];
+        ul.style.listStyleType = "none";
+        ul.style.display = "inline";
+        ul.style.fontSize = "24px";
+        ul.style.textShadow = "2px 2px 2px";
+
+        function rolloverImage() {
+            var back = document.getElementById("back");
+            back.style.backgroundImage = "url('https://images.unsplash.com/photo-1586347639523-4cc67074e916?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')"
+
+        };
+
+
+
+    </script>
+</body>
+
+</html>

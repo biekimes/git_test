@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 1000px;
+            color: #184e77;
+        }
+
+        caption {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        tr {
+            border-top: 1px solid #1a759f;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #d9ed92;
+        }
+
+        .title {
+            width: 600px;
+        }
+
+        .new {
+            padding: 1px 3px;
+            font-size: 8px;
+            font-weight: bold;
+            background-color: #76c893;
+            color: white;
+            border-radius: 50%;
+        }
+
+        .paging {
+            text-align: right;
+            padding-right: 147px;
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+            background-color: #b5e48c;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:nth-of-type(2) {
+            background-color: #52b69a;
+            color: #b5e48c;
+        }
+
+        button:nth-of-type(2):hover {
+            background-color: #1a759f;
+
+        }
+
+        .post {
+            text-align: right;
+        }
+
+        .post_btn {
+            width: 80px;
+            background-color: #52b69a;
+            color: #b5e48c;
+        }
+
+        button:hover {
+            background-color: #99d98c;
+        }
+
+        .post_btn:hover {
+            width: 80px;
+            background-color: #1a759f;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>게시판 </caption>
+        <tr>
+            <th>No.</th>
+            <th class="title">Title</th>
+            <th>Count</th>
+            <th>Date</th>
+            <th>Like</th>
+            <th>Dislike</th>
+        </tr>
+        <tr>
+            <td>1 </td>
+            <td>Nuevo Post <span class="new">N</span>
+            </td>
+            <td>1</td>
+            <td>2021-03-34</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Algo Cosa</td>
+            <td>2</td>
+            <td>2021-03-18</td>
+            <td>30</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Hola Todos</td>
+            <td>15</td>
+            <td>2021-03-04</td>
+            <td>5</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Como sales con tu Novia?</td>
+            <td>52</td>
+            <td>2021-03-01</td>
+            <td>32</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Estoy demasiado gordo..</td>
+            <td>35</td>
+            <td>2021-02-22</td>
+            <td>4</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Caulquier</td>
+            <td>60</td>
+            <td>2021-02-15</td>
+            <td>15</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="paging">
+                <button>&lt;</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>&gt;</button>
+            </td>
+            <td colspan="3" class="post"><button class="post_btn">글쓰기</button></td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is Not a Number</title>
+
+    <script>
+        document.write(isNaN(1234), "<br>");
+        document.write(isNaN("123"), "<br>");
+        document.write(isNaN("dato"), "<br>");
+        document.write(isNaN(true), "<br>"); //Boolean value 1, 0 (numbers)
+
+        document.write(isNaN(NaN), "<br>")
+        document.write(isNaN(undefined), "<br>")
+        document.write(isNaN(null), "<hr>") //null has a number value
+
+        document.write(Number(true), "<br>")
+        document.write(Number(false), "<br>")
+        document.write(Number(null), "<br>")
+        document.write(Number("1234"), "<br>")
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

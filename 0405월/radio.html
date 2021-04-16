@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button</title>
+
+    <style>
+        div {
+            width: 700px;
+            height: 100px;
+            padding: 10px;
+            box-shadow: 15px 0px 1px -10px rgb(157, 153, 157);
+        }
+
+
+
+        input {
+            width: 0px;
+        }
+
+        input:checked+label {
+            background-image: url('radio_check.png');
+        }
+
+        label {
+            margin: 10px;
+            padding-left: 30px;
+            width: 100px;
+            background-image: url('radio_none_check.png');
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: 5px center;
+            box-shadow: 24px 0px 1px -20px rgb(99, 83, 99);
+        }
+
+        .two {
+            background-color: azure;
+            box-shadow: none;
+        }
+
+        .two input:checked+label {
+            background-image: url('check.png');
+        }
+
+        .two label {
+            display: inline-block;
+            font-size: 50px;
+            line-height: 100px;
+            margin: 10px;
+            padding-left: 70px;
+            width: 200px;
+            height: 100px;
+            background-image: url('notchecked.png');
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-position: 5px center;
+        }
+
+        form {
+            width: 800px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        form li {
+            margin: 20px;
+            width: 220px;
+            height: 40px;
+            box-shadow: 6px 0px 1px -5px rgb(99, 83, 99);
+            display: inline-block;
+        }
+
+        form label {
+            background-image: none;
+            width: 200px;
+        }
+
+
+        form label input {
+            box-sizing: border-box;
+            width: 90%;
+            height: 40px;
+            border: none;
+        }
+
+        form select {
+            margin-left: 10px;
+            box-sizing: border-box;
+            border: none;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <input type="text">
+        <input type="radio" name="n" id="n1"><label for="n1">Sip</label>
+        <input type="radio" name="n" id="n2" checked><label for="n2">No</label>
+    </div>
+    <div class="two">
+
+        <input type="radio" name="n" id="two1"><label for="two1">Sip</label>
+        <input type="radio" name="n" id="two2" checked><label for="two2">No</label>
+    </div>
+
+    <form action="" method="post">
+
+        <ul>
+            <li>
+                <label for="">
+                    <input type="text" placeholder="Enter Detail">
+                </label>
+            </li>
+            <li>
+                <label for="">
+                    <select name="" id="">
+                        <option value="">Algo</option>
+                        <option value="">Contenido</option>
+                        <option value="">Joder</option>
+                        <option value="">Caramba</option>
+                    </select>
+                </label>
+            </li>
+        </ul>
+
+
+
+    </form>
+</body>
+
+</html>

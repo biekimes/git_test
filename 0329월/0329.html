@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.29</title>
+
+    <style>
+        div {
+            float: right;
+        }
+
+        div:first-of-type {
+            width: 200px;
+            height: 200px;
+            border: 2px solid cadetblue;
+
+        }
+
+        div:nth-of-type(2) {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(112, 120, 186);
+        }
+
+        div:nth-of-type(3) {
+            width: 150px;
+            height: 100px;
+            border: 5px solid navy;
+            border-radius: 10px;
+        }
+
+        div:nth-of-type(4) {
+            width: 300px;
+            height: 400px;
+            background-color: violet;
+        }
+
+        .container {
+            margin: auto;
+            width: 1000px;
+            height: 800px;
+            border: 2px solid burlywood;
+        }
+
+        .container div {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(112, 120, 186);
+            border: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .container div:first-of-type {
+            background-color: chartreuse;
+            float: right;
+        }
+
+        .container div:nth-of-type(2) {
+            background-color: mediumslateblue;
+            float: right;
+        }
+
+        .container div:nth-of-type(3) {
+            background-color: plum;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Float</H1>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- <div class="container">
+        <div></div>
+
+        <div></div>
+        <div></div>
+    </div> -->
+
+</body>
+
+</html>

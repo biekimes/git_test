@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Onload</title>
+
+    <script>
+        window.onload = function () {
+            var img = document.getElementsByTagName("img")[0];
+            img.onload = function () {
+                alert("img load");
+            }
+        }
+
+        function imgLoad() {
+            alert("imgLoad");
+        }
+
+        var img = document.getElementsByTagName("img")[0];
+        img.onload = imgLoad();
+
+    </script>
+</head>
+
+<body>
+    <h1>Onload Event Test</h1>
+    <img src="https://images.unsplash.com/photo-1600526219929-c02aa92781ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+        alt="">
+    <h2>H2</h2>
+</body>
+
+</html>

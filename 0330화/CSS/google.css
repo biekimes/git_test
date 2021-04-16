@@ -1,0 +1,209 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 10px;
+    height: 40px;
+}
+
+header .link {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    padding: 10px 5px;
+    margin-right: 5px;
+    float: right;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+header img {
+    width: 15px;
+    opacity: 0.6;
+}
+
+.tile{
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin: 2px 5px;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.tile:hover {
+    background-color: rgb(242, 240, 240);
+    border-radius: 50%;
+}
+
+header button {
+    margin-right: 15px;
+    margin-left: 5px;
+    width: 100px;
+    height: 40px;
+    float: right;
+    border-radius: 6px;
+    border: none;
+    box-sizing: border-box;
+    background-color: rgb(85, 136, 232);
+    color: white;   
+    font-size: 0.9em;
+}
+
+header button:hover {
+    background-color: rgb(103, 152, 243);
+    box-shadow: 0px 1px 3px cornflowerblue;
+    cursor: pointer;
+}
+
+
+section {
+    text-align: center;
+    margin-top: 200px;
+}
+
+section form input {   
+   
+    padding-left: 45px;
+    width: 400px;   
+    height: 44px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    border-style: none;
+    background-image: url('../search_326690.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    opacity: 0.6;
+    outline: none;
+}
+
+section form:hover {
+    box-shadow: 0px 1px 5px lightgrey;
+}
+
+section form:focus{
+    box-shadow: 0px 1px 5px lightgrey;
+}
+
+form {  
+    margin-top: 20px;
+    height: 44px;
+    border: 1px solid rgb(230, 229, 229);
+    display: inline-block;   
+    border-radius: 30px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+form > * {   
+    float: left;
+}
+
+form a {    
+    display: inline-block;
+    height: 32px;
+    padding: 6px 0;   
+    margin-left: 10px;
+}
+
+form a img {
+    width: 32px;
+    box-sizing: border-box;  
+}
+
+form button img:hover {
+   cursor: pointer;
+}
+
+.button {
+    clear: both;
+    margin-top: 20px;
+}
+
+.button button {
+    margin: 5px;
+    padding: 0 20px;
+    background-color: rgb(250, 246, 246);
+    color: rgb(68, 68, 68);
+    border: none;   
+    height: 40px;    
+    border-radius: 5px;
+    font-size: 0.9em;    
+}
+
+.button button:hover {
+    border: 1px solid lightgrey;
+    box-shadow: 0px 1px 3px lightgrey;
+    cursor: pointer;
+}
+
+.button button:focus {
+    outline:none;
+    border: 1px solid rgb(9, 87, 253);    
+}
+
+section p {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+section p a {
+    text-decoration: none;
+}
+section p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color:  rgb(250, 246, 246);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {      
+    font-size: 0.9em;
+    color: grey;
+    height: 32px;    
+    line-height: 32px;
+    padding: 5px 25px;  
+    border-bottom: 1px solid rgb(216, 215, 215);
+}
+
+footer ul { 
+    font-size: 0.85em;  
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    list-style: none;
+    display: inline-block;
+}
+
+footer ul:nth-child(2) {
+   float: right;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+

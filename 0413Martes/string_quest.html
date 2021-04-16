@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Quest</title>
+
+    <script>
+        let name = prompt("Enter A Name");
+        document.write(name.toUpperCase(), "<br>");
+
+        let social = prompt("Enter your SSN");
+        social = social.substring(0, social.length - 6);
+        document.write(social + "******");
+        // if (social.length !== 14) {
+        //     prompt("14 digits!");
+        // } else if (social.length === 14) {
+        //     document.write(social.substr(0, 6), " - ", social.substr(7 - 13))
+        // }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

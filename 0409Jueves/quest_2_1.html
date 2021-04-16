@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Won Quest</title>
+
+    <script>
+        // let money = Number(prompt("Korean Won"));
+        // let ea = 50000, sw = true;
+        // while (ea > 5) {
+        //     document.write(ea + "원 ", Math.floor(money / ea), "개 <br>");
+        //     money %= ea;
+        //     if (sw) {
+        //         ea /= 5;
+        //     } else {
+        //         ea /= 2;
+        //     }
+        //     sw = !sw;
+        // }
+
+        let dollar = Number(prompt("USD"));
+        let amount = 100, swch = true;
+        while (amount >= 1) {
+            document.write("$" + amount, " ", Math.floor(dollar / amount))
+            dollar %= amount;
+            if (swch) {
+                amount /= 5;
+            }
+            swch = !swch;
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

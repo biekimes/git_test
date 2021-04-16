@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Menu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        .menu {
+            display: inline-block;
+        }
+
+        .box {
+            width: 200px;
+            height: 50px;
+            box-sizing: border-box;
+            border: 1px solid #606c38;
+            background-color: #fefae0;
+            font-size: 24px;
+            float: left;
+            line-height: 50px;
+            transition: 250ms;
+        }
+
+        .menu a {
+            color: #283618;
+        }
+
+        .left {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .right {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .box:hover {
+            background-color: #dad5b5;
+            color: #f8fde5;
+            transform: scale(1.04);
+        }
+
+        .body {
+            width: auto;
+            height: 800px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            margin: auto;
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+            background-color: #fefae0;
+            border: 2px solid #dda15e;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Float Menu</h1>
+    <div class="container">
+        <div class="menu">
+            <a href="#">
+                <div class="box left" title="Main Page">
+                    홈
+                </div>
+            </a>
+            <a href="#">
+                <div class="box">회사소개</div>
+            </a>
+            <a href="#">
+                <div class="box">고객센터</div>
+            </a>
+            <a href="#">
+                <div class="box">오시는길</div>
+            </a>
+            <a href="#">
+                <div class="box right">주문하기</div>
+            </a href="#">
+        </div>
+
+        <div class="body">
+            <button>ORDER</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

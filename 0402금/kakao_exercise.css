@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+form {
+    margin: 0 auto;
+    padding: 69px 69px;
+    width: 580px;
+    height: 950px;
+    border: 1px solid #e8e8e8;
+
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
+    
+}
+
+label {
+    display: none;
+   
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    font-size: 16px
+}
+
+input:hover {
+    cursor: pointer;
+}
+input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.email_label::after {
+    content: '@kakao.com';
+    font-size: 18px;
+    line-height: 1.6;
+    color: grey;    
+    position: relative;
+    left: 370px;
+    top: 42px;
+}
+
+.nickname_label::after {
+    content: '0/20';
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(163, 163, 163);    
+    position: relative;
+    left: 500px;
+    top: 42px;
+}
+
+
+ul {
+    margin: 30px 0;
+    padding-left: 20px;
+    color: grey;
+    font-size: 12px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+input[type="password"] {
+    margin-bottom: 10px;
+}
+
+.nickname_label, .tel_label {
+    margin-top: 40px;
+}
+
+select:first-of-type {
+    width: 12%;
+    height: 40px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    font-size: 16px;
+    float: left;
+}
+
+.tel_label::after{
+    content: '|';
+    font-size: 20px;
+    font-weight: 100;
+    color: lightgrey;    
+    position: relative;
+    top: 40px;
+    left: 30px
+}
+
+input[type="tel"] {
+    width: 88%;
+    float: left;
+    padding-left: 25px;   
+}
+
+.sendit {
+    margin: 30px 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid lightgrey;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    float: right;    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.birthday {
+    clear: both;   
+  }
+
+.birth_select {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid lightgrey;
+}
+
+.birth_select select {
+    margin-right: 100px;       
+    border: none;
+    height: 40px;
+    box-sizing: border-box;
+    
+}
+.birth_select select:last-child {
+    margin-right: 0; 
+}
+
+.calender_radio {
+    float: right;
+    width: 100px;
+    height: 40px;
+    text-align: right;
+}
+
+.calender_radio  input {
+    width: 20px;
+    display: inline-block;
+}
+
+.calender_radio label {
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    top: -14px
+}
+
+.calender_radio label:hover {
+    cursor: pointer;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+.choose {
+    width: 100%;
+    height: 40px;
+    
+}
+
+.choose label {
+    display: inline-block;
+    margin-right: 50px;
+    padding-left: 30px;
+    font-weight:100;
+    background-image: url('radio_none_check.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+input[type="radio"] {   
+    width: 0px;      
+}
+
+.choose input:checked+label {
+    background-image: url('radio_check.png');
+}
+
+.next {
+    margin-top: 40px;
+    width: 100%;
+    height: 44px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.next:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+footer ul li:nth-of-type(2) a {
+    font-weight: bold;
+}
+
+
+

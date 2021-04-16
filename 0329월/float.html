@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+
+    <style>
+        .container {
+            width: 1200px;
+            height: auto;
+            background-color: rgb(216, 247, 248);
+        }
+
+        div {
+            width: 150px;
+            height: 150px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 100px;
+        }
+
+        .box1 {
+            background-color: plum;
+
+        }
+
+        .box2 {
+            background-color: goldenrod;
+            float: right;
+        }
+
+        .box3 {
+            background-color: lightskyblue;
+            border: 10px solid silver;
+            width: 800px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        12
+        <div class="box1 left"></div>
+        <div class="box2 right"></div>
+    </div>
+    <div class="box3 clear"></div>
+
+
+</body>
+
+</html>

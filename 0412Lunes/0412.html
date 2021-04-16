@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunes</title>
+</head>
+
+<script>
+    // function sum(a, b) {
+    //     return a + b;
+    // }
+    // var result = sum(10, 30);
+    // document.write(result, "<hr>");
+
+    // function inputNumber() {
+    //     var result = Number(prompt("Enter a Number"));
+    //     return result;
+    // }
+
+    // function printResult(result) {
+    //     document.write("Return value: " + result);
+    // }
+
+    // function init() {
+    //     var n1 = inputNumber();
+    //     var n2 = inputNumber();
+    //     var result = sum(n1, n2);
+    //     printResult(result);
+    // }
+
+    // init();
+    var answer = parseInt(prompt("Enter a Number"));
+
+    for (i = 1; i <= answer; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            document.write("FizzBuzz", "<br>");
+        } else if (i % 5 === 0) {
+            document.write("Buzz", "<br>");
+        } else if (i % 3 === 0) {
+            document.write("Fizz", "<br>");
+        } else {
+            document.write(i, "<br>")
+        }
+    }
+
+
+</script>
+
+<body>
+
+
+</body>
+
+</html>

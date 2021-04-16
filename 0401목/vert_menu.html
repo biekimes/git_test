@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Menu</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: rgb(41, 85, 232);
+            border-radius: 5px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background-color: rgb(139, 202, 202);
+        }
+
+        .left {
+            background-color: #d6e2e9;
+            width: 100px;
+            height: 100vh;
+            position: fixed;
+            left: 0px;
+        }
+
+        .left ul {
+            padding: 5px;
+            list-style: none;
+            text-align: center;
+        }
+
+        a:first-child li {
+            padding: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            width: 50px;
+            height: 50px;
+            background-image: url('icons/iconfinder_home_126572.png');
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        a:nth-child(2) li {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px;
+            width: 50px;
+            height: 50px;
+            background-image: url('icons/iconfinder_-_Hamburger-Menu-More-Navigation-List_3844437.png');
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        a:nth-child(3) li {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px;
+            width: 50px;
+            height: 50px;
+            background-image: url('icons/iconfinder_image_216246.png');
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        a:nth-child(4) li {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px;
+            width: 50px;
+            height: 50px;
+            background-image: url('icons/iconfinder_search_1608826.png');
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        a:nth-child(5) li {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px;
+            width: 50px;
+            height: 50px;
+            background-image: url('icons/iconfinder_help_172477.png');
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .left ul a li {
+            transition: 200ms;
+        }
+
+        .left ul>a>li:hover {
+            background-color: rgb(164, 181, 213);
+            border-radius: 10px;
+            transform: scale(1.1);
+        }
+
+        .left ul>a:last-child li:hover {
+            background-color: rgb(164, 181, 213);
+            border-radius: 40px;
+        }
+
+        .left ul a:first-child li::after {
+            content: 'Home';
+            background-color: rgba(0, 0, 128, 0.534);
+            color: aliceblue;
+            padding: 5px;
+            position: relative;
+            left: 60px;
+            top: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transform: scale(0);
+            transition: 200ms;
+        }
+
+        .left ul a:nth-child(2) li::after {
+            content: 'Apps';
+            background-color: rgba(0, 0, 128, 0.534);
+            color: aliceblue;
+            padding: 5px;
+            position: relative;
+            left: 60px;
+            top: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transform: scale(0);
+            transition: 200ms;
+        }
+
+        .left ul a:nth-child(3) li::after {
+            content: 'Images';
+            background-color: rgba(0, 0, 128, 0.534);
+            color: aliceblue;
+            padding: 5px;
+            position: relative;
+            left: 60px;
+            top: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transform: scale(0);
+            transition: 200ms;
+        }
+
+        .left ul a:nth-child(4) li::after {
+            content: 'Search';
+            background-color: rgba(0, 0, 128, 0.534);
+            color: aliceblue;
+            padding: 5px;
+            position: relative;
+            left: 60px;
+            top: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transform: scale(0);
+            transition: 200ms;
+        }
+
+        .left ul a:last-child li::after {
+            content: 'Info';
+            background-color: rgba(0, 0, 128, 0.534);
+            color: aliceblue;
+            padding: 5px;
+            position: relative;
+            left: 52px;
+            top: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            transform: scale(0);
+            transition: 200ms;
+        }
+
+        .left ul a li:hover::after {
+            transform: scale(0.9);
+        }
+
+        header {
+            width: 100%;
+            height: 48vh;
+
+            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top -300px right 0;
+        }
+
+        .main_menu {
+            height: 100px;
+            width: 100%;
+            background-color: #c5dedd;
+            text-align: center;
+        }
+
+        .main_menu ul {
+            height: 100px;
+            list-style: none;
+        }
+
+        .main_menu li {
+            display: inline-block;
+            width: 250px;
+            font-size: 30px;
+        }
+
+        .main_menu li a {
+            padding: 5px 4px;
+            text-decoration: none;
+            color: #1b4965;
+            line-height: 100px;
+            font-weight: bold;
+            transition: 100ms;
+        }
+
+        .main_menu li a:hover {
+            border-bottom: 5px solid rgb(72, 153, 224);
+        }
+
+        section:first-of-type article {
+            width: 500px;
+            height: 220px;
+            display: inline-block;
+            /* margin: 50px 150px; */
+            padding: 10px;
+            background-color: rgba(152, 236, 236, 0.63);
+            color: aliceblue;
+            position: relative;
+            top: 50px;
+            left: 280px;
+        }
+
+        section article h2 {
+            padding-left: 5px;
+        }
+
+        section article p {
+            padding: 5px;
+        }
+
+        section {
+            width: 100%;
+            height: 60vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+
+        section:first-of-type {
+            background-image: url('https://images.unsplash.com/photo-1607153333879-c174d265f1d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
+
+        }
+
+        .cf_section {
+            text-align: center;
+            padding-top: vh;
+        }
+
+        .cf_section iframe {
+            padding-top: 5vh;
+        }
+
+        section:nth-of-type(2) {
+            /* background-image: url('https://images.unsplash.com/photo-1518467166778-b88f373ffec7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80'); */
+            background-color: rgb(140, 199, 250);
+        }
+
+        section:nth-of-type(3) {
+            /* background-image: url('https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); */
+            background-color: rgb(89, 173, 247);
+            text-align: center;
+        }
+
+        section:nth-of-type(4) {
+            background-image: url('https://images.unsplash.com/photo-1468413253725-0d5181091126?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-position: bottom -150px right 0px;
+        }
+
+        .print_section h2 {
+            font-size: 32px;
+            padding-left: 50px 0px;
+        }
+
+        .print_section img {
+            width: 300px;
+            height: 500px;
+            margin: 0 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="left">
+        <ul>
+            <a href="#">
+                <li></li>
+            </a>
+            <a href="#">
+                <li></li>
+            </a>
+            <a href="#">
+                <li></li>
+            </a>
+            <a href="#">
+                <li></li>
+            </a>
+            <a href="#">
+                <li></li>
+            </a>
+
+        </ul>
+    </nav>
+    <header alt="The Earth"> </header>
+    <nav class="main_menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">LEARN</a></li>
+            <li><a href="#">PRINT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+    </nav>
+    <section>
+        <article>
+            <h2>Ayude al Mar!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolor quibusdam sint excepturi quos iusto
+                cumque
+                quo repudiandae consequuntur libero. Atque excepturi dolores dicta fuga ab accusantium doloribus
+                voluptatem
+                optio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laboriosam nobis, eos sequi assumenda
+                facere ducimus quam temporibus, possimus itaque reprehenderit excepturi, ea libero quisquam sed eum!
+                Assumenda, dolorum perferendis.</p>
+        </article>
+    </section>
+    <section class="cf_section">
+        <iframe width="50%" height="80%" src="https://www.youtube.com/embed/843Rpqza_6o" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+    <section class="print_section">
+        <article>
+            <h2>PRINT</h2>
+            <div>
+                <a href="#" title="See Original Image"><img src="content_img.jpg" alt="Wallpaper Image"></a>
+                <a href="#" title="See Original Image"><img src="content_img.jpg" alt="Wallpaper Image"></a>
+                <a href="#" title="See Original Image"><img src="content_img.jpg" alt="Wallpaper Image"></a>
+            </div>
+        </article>
+
+    </section>
+    <section></section>
+
+    <script>
+        const rollDie = (die1) => {
+            die1 = Math.floor(Math.random() * 6) + 1
+            if (die1 === 1) {
+                console.log(die1)
+                console.log("You Lost");
+            } else if (die1 !== 1) {
+                console.log(die1)
+                console.log("Congrats")
+            }
+        }
+    </script>
+</body>
+
+</html>

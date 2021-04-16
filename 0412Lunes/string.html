@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+
+    <script>
+        var str = "대법관은 대법원장의 제청으로 국회의 동의를 얻어 대통령이 임명한다." +
+            " 헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다." + " 국회는 선전포고, 국군의 외국에의 파견 또는 외국군대의 대한민국 영역안에서의 주류에 대한 동의권을 가진다."
+        document.write(str.charAt(1), " ", str.charAt(92), "<br>");
+        document.write(str.indexOf("법원"), "<br>");
+        document.write(str.indexOf("법원", 10), "<br>");
+        document.write(str.lastIndexOf("대통령"), "<br>");
+        document.write(str.lastIndexOf("대통령", 10), "<br>");
+
+        document.write("무자열 개수: ", str.length, "<br>")
+        document.write(str.replace("법", "신"), "<br>");
+        document.write(str, "<br>");
+        str = str.replace("법", "신");
+        document.write(str, "<br>");
+        str = str.replaceAll("법", "신");
+        document.write(str, "<br>");
+        document.write(str, "<br>");
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

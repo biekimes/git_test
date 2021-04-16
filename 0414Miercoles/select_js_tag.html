@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tag</title>
+
+
+</head>
+
+<body>
+    <input type="text" value="A" name="t1"> <br>
+    <input type="text" value="B" name="t2"> <br>
+    <input type="text" value="C" name="t3"> <br>
+    <input type="text" value="D" name="t4"> <br>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <h1>h1-1</h1>
+
+    <script>
+        var p = document.getElementsByTagName("p");
+        console.log(p.length);
+        //inner HTML :
+        for (i = 0; i < p.length; i++) {
+            console.log(p[i].innerHTML);
+            p[i].style.backgroundColor = "#f8a1a9"
+        }
+        var h1 = document.getElementsByTagName("h1");
+        console.log(h1.length);
+        for (i = 0; i < h1.length; i++) {
+            console.log(h1[i].innerHTML);
+            h1[i].style.backgroundColor = "yellowgreen"
+        }
+
+        var input = document.getElementsByTagName("input");
+        console.log(input.length);
+        for (i = 0; i < input.length; i++) {
+            console.log(input[i].value + " : " + input[i].name);
+            input[i].value += i;
+            input[i].style.color = "blue";
+        }
+    </script>
+</body>
+
+</html>

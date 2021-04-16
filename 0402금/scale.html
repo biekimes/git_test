@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale</title>
+
+
+    <style>
+        img {
+            width: 100px;
+            transition: 150ms;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-image: url('https://images.unsplash.com/photo-1528068079014-ca011a7f4035?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80');
+            background-size: 100% 100%;
+            display: inline-block;
+            transition: 100ms;
+        }
+
+        .s1:hover {
+            transform: scaleX(1.2);
+        }
+
+        .s2:hover {
+            transform: scaley(1.2);
+        }
+
+        .s3:hover {
+            transform: scaleZ(2);
+        }
+
+        .s4:hover {
+            transform: scale(2);
+        }
+
+        .i1:hover {
+            transform: skewX(10deg);
+        }
+
+        .i2:hover {
+            transform: skewy(20deg);
+        }
+
+        .i3:hover {
+            transform: skew(10deg, 10deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s3"></div>
+    <div class="s4"></div>
+    <hr>
+    <h2>Skew</h2>
+    <img src="../0401목/content_img.jpg" class="i1">
+    <img src="../0401목/content_img.jpg" class="i2">
+    <img src="../0401목/content_img.jpg" class="i3">
+    <img src="../0401목/content_img.jpg" class="i4">
+</body>
+
+</html>

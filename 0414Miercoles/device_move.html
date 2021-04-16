@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeviceMove</title>
+
+    <script>
+        var info = navigator.userAgent.toLowerCase();
+
+
+        if (info.indexOf("windows") !== -1) {
+            document.write("<a href='https://microsoft.com'>MS Page</a>")
+            location.href = "https://microsoft.com"
+        } else if (info.indexOf("macintosh") != -1) {
+            document.write("<a href='https://apple.com/mac'>Mac Page</a>")
+        } else if (info.indexOf("iphone") != -1) {
+            document.write("<a href='https://apple.com/iphone'>Iphone Page</a>")
+        } else if (info.indexOf("android") != -1) {
+            document.write("<a href='https://google.com'>Google</a>")
+        } else if (info.indexOf("ipad") != -1) {
+            document.write("<a href='https://apple.com/ipad'>Ipad Page</a>")
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

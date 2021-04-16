@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock</title>
+
+    <script>
+        const play = ["Rock", "Paper", "Scissor"]
+        const computerPlay = () => {
+            let randomPlay = play[Math.floor(Math.random() * 3)];
+            randomPlay = randomPlay.toLowerCase();
+            return randomPlay;
+        }
+
+
+        const humanPlay = () => {
+            let hand = prompt("Choose between Rock, Paper, and Scissor").toLowerCase();
+            return hand;
+            computerPlay();
+        }
+        function game() {
+
+        }
+
+        if (humanPlay() === computerPlay()) {
+            document.write("Tie. Play Again!");
+            document.write(humanPlay(), " ", computerPlay());
+            return true;
+        } else if (humanPlay() === "rock" && computerPlay() === "paper") {
+            document.write("You Win. ", humanPlay(), " beats ", computerPlay());
+            return true;
+        } else if (humanPlay() === "paper" && computerPlay() === "rock") {
+            document.write("You Win. ", humanPlay(), " ", computerPlay());
+            return true;
+        } else if (humanPlay() === "scissor" && computerPlay() === "paper") {
+            document.write("You Win. ", humanPlay(), " ", computerPlay());
+            return true;
+        } else {
+            document.write("You lose. ", humanPlay(), " loses to ", computerPlay());
+
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

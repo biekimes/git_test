@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Quest 2</title>
+
+    <script>
+        var i = 1; num = Number(prompt("Number"));
+        var table = "<table>";
+        while (i <= 10) {
+            table += "<tr>";
+            table += `<td> ${num} </td><td> X </td><td> ${i} </td><td>=</td> <td> ${num * i} </td>`;
+            table += "</tr>";
+            i++
+        }
+        table += "</table>";
+        document.write(table);
+
+        document.write("<hr>")
+
+        i = 0;
+        var table = "<table>";
+        while (i <= 10) {
+            table += "<tr><td>" + num + "</td><td> X </td><td>" + i + "</td><td> = </td><td>" + num * i + "</td></tr>"
+            i++;
+        }
+        table += "</table>";
+        document.write(table);
+        console.log(table);
+
+        // var table = "<table>";
+        // table += "<tr>";
+        // table += `<td> ${num} </td><td> X </td><td> ${i} </td><td>=</td> <td> ${num * i} </td>`;
+        // table += "</tr>";
+        // table += `<td> ${num} </td><td> X </td><td> ${i} </td><td>=</td> <td> ${num * i} </td>`;
+        // table += "</tr>";
+        // table += `<td> ${num} </td><td> X </td><td> ${i} </td><td>=</td> <td> ${num * i} </td>`;
+        // table += "</tr>";
+        // table += "</table>";
+        // document.write(table);
+
+
+
+    </script>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 50px;
+            padding: 5px;
+            border: 1px solid grey;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

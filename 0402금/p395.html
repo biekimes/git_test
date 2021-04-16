@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 395</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid gainsboro;
+            transition: 200ms;
+        }
+
+        div:nth-of-type(2):hover {
+            transform: translate(10px, 10px);
+            -webkit-transform: translate(10px, 10px);
+            background-color: rgba(219, 130, 174, 0.624);
+        }
+
+        div:nth-of-type(3):hover {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            background-color: lightskyblue;
+        }
+
+        div:nth-of-type(4):hover {
+            transform: scale(1, 0.5);
+            -webkit-transform: scale(1, 0.5);
+            background-color: rgb(101, 206, 104);
+        }
+
+        div:nth-of-type(5):hover {
+            transform: skew(20deg, 10deg);
+            -webkit-transform: skew(20deg, 10deg);
+
+            background-color: midnightblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Square</div>
+    <div>(10,10)이동</div>
+    <div>45deg</div>
+    <div>가로1배 세로 0.5배</div>
+    <div>x축 20도 y축 10도</div>
+
+</body>
+
+</html>

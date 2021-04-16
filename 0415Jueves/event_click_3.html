@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Click 3 Cancel</title>
+
+    <script>
+        window.onload = function () {
+            var a = document.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                a[i].onclick = function (e) {
+                    if (this.id === "google") {
+                        e.preventDefault();
+                        // return false;
+                    }
+                }
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <a href="https://www.google.com" id="google">Un Enlace a Google</a> <br>
+    <a href="https://www.naver.com" id="naver">Un Enlace a Naver</a>
+</body>
+
+</html>

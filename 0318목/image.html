@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+
+    <style>
+        div {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            width: 600px;
+
+        }
+
+        div::after {
+            content: "";
+            background-image: url(hummingird.jpg);
+            position: absolute;
+            background-repeat: no-repeat;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        div h2 {
+            position: relative;
+            line-height: 0.9;
+            text-align: center;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <h2>Humming Bird</h2>
+    </div> -->
+
+    <img width="500" height="" src="../img/surf.jpg" alt="Barrel">
+    <img width="500" height="334" src="../img/subimage/tree.jpg" alt="">
+    <img width="500" src="hummingird.jpg" alt="">
+    <img width="500" src="../dog.jpg" alt="">
+    <!-- <img width="500" src="https://i.pinimg.com/originals/fb/7e/be/fb7ebe224986c93ab8b7ba9ecafb9877.jpg" alt=""> -->
+    <img width="500" src="/0318목/img1/unsplash.jpg" alt="">
+    <hr>
+
+
+</body>
+
+</html>

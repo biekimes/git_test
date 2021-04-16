@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Strings</title>
+
+    <script>
+        var str = "대법관은 대법원장의 제청으로 국회의 동의를 얻어 대통령이 임명한다." +
+            " 헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다." + " 국회는 선전포고, 국군의 외국에의 파견 또는 외국군대의 대한민국 영역안에서의 주류에 대한 동의권을 가진다."
+
+        var str2 = "Hello World Test Korea Soccer Baseball"
+        document.write(str2.substr(4, 10), "<br>");
+        document.write(str2.substring(4, 10), "<br>");
+        document.write(str2.substring(4), "<br>");
+        document.write(str2.substr(4), "<br>");
+
+        document.write(str2.toLowerCase(), "<br>");
+        document.write(str2.toUpperCase(), "<br>");
+
+        var str3 = "A";
+        document.write(str3.charCodeAt(0), "<br>");
+        var str4 = "ñ";
+        document.write(str4.charCodeAt(0), "<br>");
+
+        document.write(String.fromCharCode(4191), "<br>");
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

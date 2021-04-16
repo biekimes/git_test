@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+    <script>
+        var num;
+        num = 50 * 2;
+        num = 200;
+        num = 100 - 200;
+        document.write(num, "<br>");
+
+        /* 1. _, $, cap letters, numbers
+         2. First Letter: _, &, alphabet
+         3. No Keywords
+         4. Can't reuse variable names
+         */
+
+        var num = "This is 300";
+        document.write(num);
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+    <script>
+        const rollDie = () => {
+            let die1 = Math.floor(Math.random() * 6) + 1
+            let die2 = Math.floor(Math.random() * 6) + 1
+            if (die1 === 1 && die2 === 1) {
+                document.write(`You rolled ${die1} and ${die2}. Snake Eyes!`)
+            } else if (die1 !== 1 || die2 !== 1) {
+                document.write(`You rolled ${die1} and ${die2}. Not Snake Eyes!`)
+            }
+        }
+    </script>
+</body>
+
+</html>

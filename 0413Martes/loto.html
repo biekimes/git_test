@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Exercise</title>
+
+    <script>
+
+        // const createNum = () => {
+        //     return Math.floor(Math.random() * 45) + 1;
+        // }
+
+        // const createLotto = () => {
+        //     var lotto = new Array();
+        //     while (lotto.length < 7) {
+        //         let n = createNum()
+        //         if (lotto.indexOf(n) === -1) {
+        //             lotto.push(n);
+        //         }
+        //     }
+        //     return lotto.sort();
+        // }
+
+        // var ticket = createLotto();
+        // ticket = ticket.sort()
+        // document.write(ticket, "<br>")
+
+        // document.write(createLotto(), "<br>");
+
+
+        function numero() {
+            let n = Math.floor(Math.random() * 45) + 1;
+            return n;
+        }
+
+        function lotto() {
+            let ticket = [];
+            while (ticket.length < 7) {
+                let n = numero()
+                if (ticket.indexOf(n) === -1) {
+                    ticket.push(n);
+                }
+            }
+            return ticket;
+        }
+        document.write(lotto())
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

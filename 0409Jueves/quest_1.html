@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest 1</title>
+
+    <script>
+        let num1 = Number(prompt("Entra el primero numero"))
+        let num2 = Number(prompt("Entra el segundo numero"))
+        if (num1 > num2) {
+            var temp = num1;
+            num1 = num2;
+            num2 = temp;
+        }
+        // for (i = 1; i <= num1; i++) {
+        //     if (num1 % i === 0 && num2 % i === 0) {
+        //         gcd = i;
+        //     }
+        // }
+
+        for (i = num1; i > 0; i--) {
+            if (num1 % i === 0 && num2 % i === 0) {
+                gcd = i;
+                break;
+            }
+        }
+
+        document.write(gcd, " ")
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kakao_exercise.css">
+    <link rel="icon" href="iconfinder_icon_k_4875798.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
+    <title>Kakao</title>
+</head>
+
+<body>
+    <h1>kakao</h1>
+    <form action="" method="post">
+        <h2>카카오계정 정보를 입력해 주세요.</h2>
+        <p class="email_label">카카오계정 이메일</p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="아이디 입력">
+        <p>아이디를 입력해 주세요.</p>
+        <ul>
+            <li>입력한 카카오메일로 카카오계정에 로그인할 수 있습니다.</li>
+            <li>한번 만든 카카오메일은 변경할 수 없으니, 오타가 없도록 신중히 확인해 주세요.</li>
+            <li>생성한 카카오메일로 카카오계정과 관련한 알림을 받아볼 수 있습니다.</li>
+        </ul>
+
+        <p class="pw_label">비밀번호</p>
+        <label for="pw"></label>
+        <input type="password" name="pw" id="pw" placeholder="비밀번호(8-32자리)" minlength="8" maxlength="32">
+        <label for="repw"></label>
+        <input type="password" id="pw_check" placeholder="비밀번호 재입력" maxlength="32">
+
+        <p class="nickname_label">닉네임</p>
+        <label for="nickname"></label>
+        <input type="text" name="nickname" id="nickname" placeholder="닉네임을 입력해 주세요." maxlength="20">
+        <p class="tel_label">전화번호</p>
+        <label for="tel"></label>
+        <select name="tel" id="gCode">
+            <option value="82">+82 South Korea</option>
+            <option value="1">+1 United States</option>
+            <option value="84">+84 Vietnam </option>
+            <option value="61">+61 Australia</option>
+            <option value="55">+55 Brazil</option>
+            <option value="91">+91 India</option>
+            <option value="47">+47 Norway</option>
+        </select>
+        <input type="tel" name="tel" id="tel" placeholder="전화번호">
+        <a href="#"> <button class="sendit">인증번호 전송</button></a>
+
+        <div class="birthday">
+            <p class="tel_birth">생일/성별</p>
+            <div class="birth_select">
+                <label for="birth">Birthday</label>
+                <select name="birth" id="year">
+                    <option value="0">연도</option>
+                    <option value="1">2007</option>
+                    <option value="2">2006</option>
+                    <option value="3">2005</option>
+                    <option value="4">2004</option>
+                    <option value="5">2003</option>
+                    <option value="1">2002</option>
+                    <option value="1">2001</option>
+                    <option value="1">2000</option>
+                    <option value="1">1999</option>
+                    <option value="1">1998</option>
+                    <option value="1">1997</option>
+                    <option value="1">1996</option>
+                    <option value="1">1995</option>
+                    <option value="1">1994</option>
+                    <option value="1">1993</option>
+                    <option value="1">1992</option>
+                    <option value="1">1991</option>
+                    <option value="1">1990</option>
+                </select>
+                <select name="birth" id="month">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select>
+                <select name="birth" id="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                    <option value="3">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                    <option value="3">11</option>
+                    <option value="3">12</option>
+                    <option value="3">13</option>
+                    <option value="3">14</option>
+                    <option value="3">15</option>
+                </select>
+                <div class="calender_radio">
+                    <input type="checkbox" name="calender" id="calender">
+                    <label for="calender">음력</label>
+                </div>
+            </div>
+            </label>
+            <div class="choose">
+
+                <input type="radio" id="select_none" name="gender" checked>
+                <label for="select_none"> 선택안함</label>
+
+                <input type="radio" id="women" name="gender">
+                <label for="women">여성</label>
+
+
+                <input type="radio" id="men" name="gender">
+                <label for="men">남성
+                </label>
+            </div>
+        </div>
+        <button class="next">다음</button>
+    </form>
+    <footer>
+        <ul>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">운영정책</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">한국어</a></li>
+        </ul>
+        <p>Copyright © Kakao Corp. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        // const input = prompt("Roll your Die")
+        // if (input === 1) {
+        //     console.log("Snake Eyes")
+        // }
+
+        // const rollDie = () => {
+        //     let die1 = Math.floor(Math.random() * 6) + 1
+        //     let die2 = Math.floor(Math.random() * 6) + 1
+        //     if (die1 === 1 && die2 === 1) {
+        //         console.log(`You rolled ${die1} and ${die2}. Snake Eyes!`)
+        //     } else {
+        //         console.log(`You rolled ${die1} and ${die2}. Not Snake Eyes!`)
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

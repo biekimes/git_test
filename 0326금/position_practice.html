@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .container {
+            width: 1200px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(140, 75, 206);
+            /* box-sizing: border-box; */
+            top: 100px;
+            left: 100px;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .relative {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item absolute">
+            <h2>Title 1</h2>
+            <p>Absolute</p>
+        </div>
+        <!-- <div class="item fixed">
+            <h2>Title 2</h2>
+            <p>Fixed</p>
+        </div> -->
+        <div class="item relative">
+            <h2>Title 3</h2>
+            <p>relative</p>
+        </div>
+    </div>
+
+    <div class="pop">
+
+    </div>
+</body>
+
+</html>

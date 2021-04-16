@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid black;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+        }
+
+        ul {
+            font-size: 0px;
+        }
+
+        li a {
+            width: 100%;
+            font-size: 16px;
+            color: black;
+            text-decoration: none;
+            line-height: 16px;
+            padding: 17px 5px;
+            display: inline-block;
+            box-sizing: border-box;
+            
+        }
+
+        .btn {
+            margin: 5px;
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            background-color: turquoise;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            color: teal;
+        }
+
+        img:first-of-type {
+            visibility: hidden;
+        }
+
+        img:nth-of-type(2) {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li> <a href="#">uno </a></li>
+        <li><a href="#">dos</a></li>
+        <li><a href="#">tres</a></li>
+        <li><a href="#">cuatro</a></li>
+    </ul>
+    <ul>
+        <li>un</li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuatro</li>
+    </ul>
+    <ul>
+        <li>un</li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuatro</li>
+    </ul>
+
+    <Button>Button</Button>
+    <a href="#" class="btn">Button</a>
+    <a href="#">Button</a>
+    <hr>
+    <h2>Display None & Visibility</h2>
+    <img src="../img/dog.jpg" alt="">
+    <img src="../img/surf.jpg" alt="">
+    <img src="../img/sign.jpg" alt="">
+
+    <p>Algo</p>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Class</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+        }
+
+        .box1 {
+            background-color: cadetblue;
+        }
+
+        .box2 {
+            background-color: cornflowerblue;
+        }
+
+        .border {
+            border: 5px solid darkslateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1" onmouseover="changeBackground()" onclick="removeBorder()"></div>
+    <!-- <div class="box2"></div> -->
+
+
+    <script>
+        function changeBackground() {
+            var box = document.getElementsByClassName("box1")[0];
+            // console.log(box[0].style.backgroundColor);
+            // console.log(box.className);
+            box.className = "box2";
+            box.className += " border";
+            // console.log(box[0].style.backgroundColor);
+            // console.log(box.className);
+        }
+
+        function removeBorder() {
+            var box = document.getElementsByTagName("div")[0];
+            // alert(box.className);
+            // box.className = box.className.replace("border", "");
+            // box.className = box.className.trim();
+            // alert(box.className.length);
+            var arr = box.className.split(" ");
+            arr = arr.splice(arr.indexOf["border"], 1);
+            box.className = arr.join(" ");
+        }
+    </script>
+</body>
+
+</html>
